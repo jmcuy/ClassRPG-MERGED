@@ -5,25 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>ClassRPG | Home - Student</title>
 </head>
 
 <body>
     <button><a href="home-student.html">Home</a></button>
-    <button><a href="login-main.html">Sign Out</a></button>
+    <button><a href="profile-student.html">My Profile</a></button>
+    <button><a href="login.html">Sign Out</a></button>
 
     <h1>Home</h1>
 
-    Janelle Elaiza F. Unabia <br>
-    123456789 <br>
-    College of Science - Computer Science <br>
-    Student
+    <h1>Greetings, "name" !</h1>
 
     <h2>My Guild Missions</h2>
-    <button><a href="subject.html">CMSC 11</a></button>
+    <button><a href="guild-mission.html">Subject</a></button>
+    <button>Subject 2</button>
 
-    <h2>Milestones</h2>
-    Level Up! (Lvl 2) 7/23/19
+    <h2>Add Guild Mission</h2>
+    Enter Access Key: <input type="text"></input>
+    <button onclick="submit()">Submit</button>
+
+    <script>
+    
+    function submit(){
+        window.alert("Guild Mission Added Successfully!");
+    }
+    </script>
 </body>
 
 </html>
