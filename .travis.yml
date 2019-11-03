@@ -1,14 +1,14 @@
 langauge: node_js
+
 node_js:
-- 12.11.1
-cache: npm
+  - 12.11.1
 
 install:
-- npm ci
+  - npm ci
 
 script:
-- npm test
-- npm run build
+  - npm test
+  - npm run build
 
 deploy:
   provider: pages
