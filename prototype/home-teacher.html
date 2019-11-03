@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ClassRPG | Home - Teacher</title>
+</head>
+
+<body>
+    <button><a href="home-teacher.html">Home</a></button>
+    <button><a href="profile-teacher.html">My Profile</a></button>
+    <button><a href="login.html">Sign Out</a></button>
+
+    <h1>Home</h1>
+
+    <h1>Greetings, Teacher!</h1>
+
+    <button onclick="addGuildMission()">Add Guild Mission</button>
+    <p id="addGuildMission">
+        Guild Mission Name: <input type="text">
+        <button  onclick="submit()">Submit</button>
+
+    </p>
+    <h2>My Guild Mission/s (Subject/s)</h2>
+    <button><a href="guild-mission-teacher.html">CMSC 11</a></button>
+    <button>CMSC 56</button>
+
+    <script>
+        document.getElementById("addGuildMission").style.display = "none";
+
+        function addGuildMission() {
+            var x = document.getElementById("addGuildMission");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        document.getElementById("view-mission").style.display = "none";
+
+    function submit(){
+        window.alert("Guild Mission added successfully! \nAccess code is: ");
+    }
+
+    </script>
+</body>
+
+</html>
