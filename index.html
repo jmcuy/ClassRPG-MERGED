@@ -12,49 +12,17 @@
 </head>
 
 <body>
-    <div class="title animated fadeIn" >
-    <img src="assets/title.png" alt="Girl in a jacket"> 
-</div>
+    <div class="title animated fadeIn">
+        <img src="assets/title.png">
+    </div>
 
-<div class="btn-sign-in animated bounceIn">
-    <button type="submit"  style="border: 0; background: transparent">
-        <a href=login.html>
-        <img src="assets/btn-sign-in.png" width="50%" height="50%"/>
-    </a>
-    </button><br><br>
-</div>
-    <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-auth.js"></script>
-
-    <script>
-        var config = {
-            apiKey: "AIzaSyCRNtGaHVfkfU6JwZj9BBSYfUpSXRJ0lIk",
-            authDomain: "classrpg-2ac09.firebaseapp.com",
-            databaseURL: "https://classrpg-2ac09.firebaseio.com",
-            projectId: "classrpg-2ac09",
-            storageBucket: "",
-            messagingSenderId: "265529658530",
-            appId: "1:265529658530:web:213f9c11a2a57002"
-        };
-        firebase.initializeApp(config);
-
-        googleSignIn=()=>{
-            base_provider = new firebase.auth.GoogleAuthProvider()
-            firebase.auth().signInWithPopup(base_provider).then(function(result) {
-                console.log(result)
-                console.log("Success")
-            }).catch(function(err){
-                console.log(err)
-                console.log("Failed")
-            })
-        }
-    </script>
-
-<script
-src="https://code.jquery.com/jquery-3.4.1.min.js"
-integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-crossorigin="anonymous"></script>
+    <div class="btn-sign-in animated bounceIn">
+        <button type="submit" style="border: 0; background: transparent">
+            <a href=login.html>
+                <img src="assets/btn-sign-in.png" width="40%" height="40%" />
+            </a>
+        </button><br><br>
+    </div>
 </body>
 
 </html>
