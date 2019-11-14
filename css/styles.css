@@ -4,8 +4,11 @@ body {
 
 .title {
     text-align: center;
+    animation-duration: 3s;
 }
 
 .btn-sign-in {
     text-align: center;
+    animation-delay: 3s;
 }
+
