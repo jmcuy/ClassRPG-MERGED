@@ -1,8 +1,6 @@
 # ClassRPG
 CMSC 166 Project
 
-To view individual progresses, please refer to the different branches with their corresponding commit messages & usernames (since we haven't merged yet our outputs).
+(Working Code) GitHub Page: https://jefunabia.github.io/ClassRPG/index.html
 
-GitHub Page: https://jefunabia.github.io/ClassRPG/index.html
-
-Firebase Page: https://classrpg-2ac09.firebaseapp.com/
+(Prototype) Firebase Page: https://classrpg-2ac09.firebaseapp.com/
