@@ -12,3 +12,15 @@ body {
     animation-delay: 1.5s;
 }
 
+.login-avatar {
+    text-align: center;
+}
+
+.login-avatar:hover {
+    animation: pulse 1.5s;
+}
+
+.h-sign-in {
+    text-align: center;
+    margin-top: 2%;
+}
