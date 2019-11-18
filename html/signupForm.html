@@ -1,0 +1,38 @@
+<html>
+<head>
+</head>
+<body>
+
+  <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+
+  <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+
+  <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-database.js"></script>
+
+  <script src="../js/firebase.js" defer></script>
+  <script src="../js/signupForm.js" defer></script>
+  <link rel="stylesheet" type="text/css" href="../css/signupForm.css">
+
+  <h1 id = "temp">Sign Up</h1>
+  <div class = "content">
+  	<form id = "signup-form">
+          <label for="talkTitle">Sais ID</label>
+          <input type="text" name="saisId" placeholder="Sais ID">
+          <label for="talkTitle2">User Type</label>
+          <input type="text" name="userType" placeholder="(Student/Teacher)">
+          <label for="talkTitle3">First Name</label>
+          <input type="text" name="firstName" placeholder="First Name">
+          <label for="talkTitle4">Last Name</label>
+          <input type="text" name="lastName" placeholder="Last Name">
+          <label for="talkTitle5">Course</label>
+          <input type="text" name="course" placeholder="Course">
+          <label for="talkTitle6">Year</label>
+          <input type="text" name="year" placeholder="Year">
+        <button>Submit</button>
+  	</form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "classrpg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jefunabia/ClassRPG.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jefunabia/ClassRPG/issues"
+  },
+  "homepage": "https://github.com/jefunabia/ClassRPG#readme"
+}
