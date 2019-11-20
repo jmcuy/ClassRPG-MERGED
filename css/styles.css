@@ -51,11 +51,6 @@ h5 {
     text-align: center;
 }
 
-.btn {
-    width: 100%;
-    padding: 3%;
-    font-size: 18px;
-}
 
 .register-title {
     text-align: center;
@@ -98,4 +93,8 @@ h2, label {
       left: 50%;
       margin-left: -512px;   /* 50% */
     }
+  }
+
+  .smol {
+      width: 20%;
   }

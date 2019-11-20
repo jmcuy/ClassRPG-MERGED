@@ -38,8 +38,11 @@ function dispSubject(){
                 window.location.href = "./guild-mission-teacher.html" + "?/" + sub_name.replace(" ","%");
             });
             
-            sub_child.innerHTML = "<h4>"+ sub_name +" </h4>";
+            sub_child.innerHTML = "<h5>"+ sub_name +" </h5>";
             pcontainer.appendChild(sub_child);
+            let br = document.createElement("br");
+            pcontainer.appendChild(br);
+            sub_child.setAttribute("class", "class=btn btn-primary");
         }
     } else {
         console.log("unde")
