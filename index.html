@@ -2,36 +2,37 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google-signin-client_id"
+        content="38601831497-bgrj4n6lve3acphdk95ae7tub8qk7srm.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
     <title>ClassRPG | Welcome</title>
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+
 </head>
 
 <body>
-        <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-auth.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-firestore.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-database.js"></script>
-        <script src="firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
 
-    <div class="title animated fadeIn">
-        <img src="assets/title.png">
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-database.js"></script>
+
+    <script src="js/firebase.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/login.js"></script>
+
+    <div class="tos-bg">
+        <div class="title animated fadeIn">
+            <img src="assets/title.png">
+        </div>
+        <div class="title animated bounceIn">
+            <div id="firebaseui-auth-container"></div>
+        </div>
     </div>
-
-    <div class="btn-sign-in animated bounceIn">
-        <button type="submit" style="border: 0; background: transparent">
-            <a href=html/login.html>
-                <img src="assets/btn-sign-in.png" width="40%" height="40%" />
-            </a>
-        </button><br><br>
-    </div>
-
-
-
 </body>
-
 </html>

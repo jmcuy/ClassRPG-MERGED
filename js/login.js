@@ -1,6 +1,7 @@
 (function(){
   const db = firebase.firestore();
-  
+  firebase.auth().signOut();
+  var flag = 0;
   var ui = new firebaseui.auth.AuthUI(firebase.auth());
   var uiConfig = {
   callbacks: {
@@ -14,10 +15,21 @@
       db.collection('users').get().then((snapshot) => {
         snapshot.docs.forEach(doc => {
           var email = doc.data().Email;
+          if(email == currentUserEmail){
           console.log(email);
           console.log(currentUserEmail);
-        
+          var saisID = doc.data().SaisID; 
+          console.log(saisID);
+          if(saisID != ""){
+          window.location.replace("html/home-teacher.html");
+          console.log("valid");
+          flag = 1;
+          }
+        }
         });
+        if(flag == 0){
+          window.location.replace("html/register.html");
+        }
       }); 
 
       return false;

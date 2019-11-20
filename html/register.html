@@ -17,199 +17,213 @@
 </head>
 
 <body>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-database.js"></script>
+
+    <script src="../js/firebase.js" defer></script>
+    <script src="../js/register.js" defer></script>
+
     <div class="tos-bg-reg">
-    <div class="container">
-        <h1 class="register-title">Register</h1>
-        <hr class="my-4">
-        <div class="bg-img">
-        <form class="register-form">
-            <div class="form-group">
-                <label>First Name</label>
-                <input type="text" class="form-control" name="" placeholder="Enter your first name">
-            </div>
+        <div class="container">
+            <h1 class="register-title">Register</h1>
+            <hr class="my-4">
+            <div class="bg-img">
+                <form id="signup-form" class="register-form">
+                    <div class="form-group">
+                        <label>First Name</label>
+                        <input type="text" class="form-control" name="firstName" placeholder="Enter your first name">
+                    </div>
 
-            <div class="form-group">
-                <label>Last Name</label>
-                <input type="text" class="form-control" name="" placeholder="Enter your last name">
-            </div>
+                    <div class="form-group">
+                        <label>Last Name</label>
+                        <input type="text" class="form-control" name="lastName" placeholder="Enter your last name">
+                    </div>
 
-            <div class="form-group">
-                <label>Display Name</label>
-                <input type="text" class="form-control" name="" placeholder="Enter your desired display name">
-            </div>
+                    <div class="form-group">
+                        <label>Display Name</label>
+                        <input type="text" class="form-control" name="displayName"
+                            placeholder="Enter your desired display name">
+                    </div>
 
-            <div class="form-group">
-                <label>SAIS ID</label>
-                <input type="text" class="form-control" name="" placeholder="Enter your SAIS ID">
-            </div>
+                    <div class="form-group">
+                        <label>SAIS ID</label>
+                        <input type="text" class="form-control" name="saisId" placeholder="Enter your SAIS ID">
+                    </div>
 
-            <div class="form-group">
-                <h2>Select a Class</h2>
-                <hr class="my-4">
-                <div class="row">
-                    <div class="col">
-                        <div class="tos-logo">
-                            <label>
-                                <input type="radio" name="class">
-                                <img src="../assets/student.png" width="80%" height="40%">
-                            </label>
+                    <div class="form-group">
+                        <h2>Select a Class</h2>
+                        <hr class="my-4">
+                        <div class="row">
+                            <div class="col">
+                                <div class="tos-logo">
+                                    <label>
+                                        <input type="radio" name="class" value="Student">
+                                        <img src="../assets/student.png" width="80%" height="40%">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="tos-logo">
+                                    <label>
+                                        <input type="radio" name="class" value="Student">
+                                        <img src="../assets/teacher.png" width="80%" height="40%">
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="tos-logo">
-                            <label>
-                                <input type="radio" name="class">
-                                <img src="../assets/teacher.png" width="80%" height="40%">
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="form-group">
-                <h2>Select a Legion</h2>
-                <hr class="my-4">
-                <div class="row">
-                    <div class="col">
-                        <div class="tos-logo">
-                            <label>
-                                <input type="radio" name="legion">
-                                <img src="../assets/cos.png">
-                            </label>
+                    <div class="form-group">
+                        <h2>Select a Legion</h2>
+                        <hr class="my-4">
+                        <div class="row">
+                            <div class="col">
+                                <div class="tos-logo">
+                                    <label>
+                                        <input type="radio" name="legion" value="College of Science">
+                                        <img src="../assets/cos.png">
+                                    </label>
+                                </div>
+                                <h5>College of Science</h5>
+                            </div>
+                            <div class="col">
+                                <div class="tos-logo">
+                                    <label>
+                                        <input type="radio" name="legion" value="College of Social Sciences">
+                                        <img src="../assets/css.png">
+                                    </label>
+                                </div>
+                                <h5>College of Social Sciences</h5>
+                            </div>
+                            <div class="col">
+                                <div class="tos-logo">
+                                    <label>
+                                        <input type="radio" name="legion"
+                                            value="College of Communication, ARt and Design">
+                                        <img src="../assets/ccad.png">
+                                    </label>
+                                </div>
+                                <h5>College of Communication, Art and Design</h5>
+                            </div>
+                            <div class="col">
+                                <div class="tos-logo">
+                                    <label>
+                                        <input type="radio" name="legion" value="School of Management">
+                                        <img src="../assets/som.png">
+                                    </label>
+                                </div>
+                                <h5>School of Management</h5>
+                            </div>
                         </div>
-                        <h5>College of Science</h5>
                     </div>
-                    <div class="col">
-                        <div class="tos-logo">
-                            <label>
-                                <input type="radio" name="legion">
-                                <img src="../assets/css.png">
-                            </label>
-                        </div>
-                        <h5>College of Social Sciences</h5>
-                    </div>
-                    <div class="col">
-                        <div class="tos-logo">
-                            <label>
-                                <input type="radio" name="legion">
-                                <img src="../assets/ccad.png">
-                            </label>
-                        </div>
-                        <h5>College of Communication, Art and Design</h5>
-                    </div>
-                    <div class="col">
-                        <div class="tos-logo">
-                            <label>
-                                <input type="radio" name="legion">
-                                <img src="../assets/som.png">
-                            </label>
-                        </div>
-                        <h5>School of Management</h5>
-                    </div>
-                </div>
-            </div>
 
-            <div class="form-group">
-                <h2>Select a Guild</h2>
-                <hr class="my-4">
-                <div class="row">
-                    <div class="col">
-                        <div class="tos-logo">
-                            <label>
-                                <input type="radio" name="guild">
-                                <img src="../assets/bio.png">
-                            </label>
+                    <div class="form-group">
+                        <h2>Select a Guild</h2>
+                        <hr class="my-4">
+                        <div class="row">
+                            <div class="col">
+                                <div class="tos-logo">
+                                    <label>
+                                        <input type="radio" name="guild" value="Biology">
+                                        <img src="../assets/bio.png">
+                                    </label>
+                                </div>
+                                <h5>Biology</h5>
+                            </div>
+                            <div class="col">
+                                <div class="tos-logo">
+                                    <label>
+                                        <input type="radio" name="guild" value="Computer Science">
+                                        <img src="../assets/comsci.png">
+                                    </label>
+                                </div>
+                                <h5>Computer Science</h5>
+                            </div>
+                            <div class="col">
+                                <div class="tos-logo">
+                                    <label>
+                                        <input type="radio" name="guild" value="Mathematics">
+                                        <img src="../assets/math.png">
+                                    </label>
+                                </div>
+                                <h5>Mathematics</h5>
+                            </div>
                         </div>
-                        <h5>Biology</h5>
-                    </div>
-                    <div class="col">
-                        <div class="tos-logo">
-                            <label>
-                                <input type="radio" name="guild">
-                                <img src="../assets/comsci.png">
-                            </label>
+                        <div class="row">
+                            <div class="col">
+                                <div class="tos-logo">
+                                    <label>
+                                        <input type="radio" name="guild" value="Psychology">
+                                        <img src="../assets/psych.png">
+                                    </label>
+                                </div>
+                                <h5>Psychology</h5>
+                            </div>
+                            <div class="col">
+                                <div class="tos-logo">
+                                    <label>
+                                        <input type="radio" name="guild">
+                                        <img src="../assets/polsci.png" value="Political Science">
+                                    </label>
+                                </div>
+                                <h5>Political Science</h5>
+                            </div>
+                            <div class="col">
+                                <div class="tos-logo">
+                                    <label>
+                                        <input type="radio" name="guild">
+                                        <img src="../assets/mng.png" value="Management">
+                                    </label>
+                                </div>
+                                <h5>Management</h5>
+                            </div>
                         </div>
-                        <h5>Computer Science</h5>
-                    </div>
-                    <div class="col">
-                        <div class="tos-logo">
-                            <label>
-                                <input type="radio" name="guild">
-                                <img src="../assets/math.png">
-                            </label>
+                        <div class="row">
+                            <div class="col">
+                                <div class="tos-logo">
+                                    <label>
+                                        <input type="radio" name="guild">
+                                        <img src="../assets/mc.png" value="Mass Communication">
+                                    </label>
+                                </div>
+                                <h5>Mass Communication</h5>
+                            </div>
+                            <div class="col">
+                                <div class="tos-logo">
+                                    <label>
+                                        <input type="radio" name="guild">
+                                        <img src="../assets/fa.png" value="Fine Arts">
+                                    </label>
+                                </div>
+                                <h5>Fine Arts</h5>
+                            </div>
+                            <div class="col"></div>
                         </div>
-                        <h5>Mathematics</h5>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="tos-logo">
-                            <label>
-                                <input type="radio" name="guild">
-                                <img src="../assets/psych.png">
-                            </label>
+                        <br>
+                        <br>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <button class="btn btn-success">Submit</button>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <a href="index.html"><button class="btn btn-danger">Cancel</button></a>
+                                </div>
+                            </div>
                         </div>
-                        <h5>Psychology</h5>
-                    </div>
-                    <div class="col">
-                        <div class="tos-logo">
-                            <label>
-                                <input type="radio" name="guild">
-                                <img src="../assets/polsci.png">
-                            </label>
-                        </div>
-                        <h5>Political Science</h5>
-                    </div>
-                    <div class="col">
-                        <div class="tos-logo">
-                            <label>
-                                <input type="radio" name="guild">
-                                <img src="../assets/mng.png">
-                            </label>
-                        </div>
-                        <h5>Management</h5>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="tos-logo">
-                            <label>
-                                <input type="radio" name="guild">
-                                <img src="../assets/mc.png">
-                            </label>
-                        </div>
-                        <h5>Mass Communication</h5>
-                    </div>
-                    <div class="col">
-                        <div class="tos-logo">
-                            <label>
-                                <input type="radio" name="guild">
-                                <img src="../assets/fa.png">
-                            </label>
-                        </div>
-                        <h5>Fine Arts</h5>
-                    </div>
-                    <div class="col"></div>
-                </div>
-                <br>
-                <br>
-                <div class="row">
-                    <div class="col">
-                        <div class="form-group">
-                            <button class="btn btn-success">Submit</button>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="form-group">
-                            <button class="btn btn-danger">Cancel</button>
-                        </div>
-                    </div>
-                </div>
-        </form>
+                </form>
+            </div>
+        </div>
     </div>
     </div>
-    </div>
-</div>
 </body>
 
 </html>
