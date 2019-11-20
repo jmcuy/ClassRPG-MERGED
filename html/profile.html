@@ -6,38 +6,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>ClassRPG | My Profile</title>
+  <link rel="stylesheet" type="text/css" href="../css/animate.css">
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
 </head>
 
 <body>
-  <button><a href="home.html">Home</a></button>
-  <button><a href="profile.html">My Profile</a></button>
-  <button><a href="index.html">Sign Out</a></button><br><br>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">ClassRPG</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+      aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <h1>My Profile</h1>
-  <div class="prof-container">
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="home-teacher.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profile.html">My Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sign Out</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <h2>My Profile</h2>
+    <hr>
+    <div class="prof-container">
       <!-- Avatar <br>
       Full name <br>
       Course <br>
       Department <br>
       SAIS ID <br>
       Email <br> <br> -->
+    </div>
+
+
+    <button onclick="editProfile()" class="smol btn btn-success">Edit Profile</button>
+
+    <div id="profile-form">
+      <h5> Avatar: </h5> <br>
+
+      <h5>Full Name:</h5>
+      <input type="text" id="fname" class="smol form-control"></input> <br>
+
+      <h5>Course:</h5>
+      <input type="text" id="course" class="smol form-control"></input> <br>
+
+      <h5>Department:</h5>
+      <input type="text" id="department" class="smol form-control"></input> <br>
+
+      <h5>SAIS ID:</h5> <input type="text" id="sais" class="smol form-control"></input> <br> <br>
+
+      <button onclick="submit()" class="smol btn btn-success">Submit</button>
+    </div>
+
   </div>
-
-
-  <button onclick="editProfile()">Edit Profile</button>
-
-  <div id="profile-form">
-    <h2>Edit Profile</h2>
-    Avatar: <br>
-    Full Name: <input type="text" id="fname"></input> <br>
-    Course: <input type="text" id="course"></input> <br>
-    Department: <input type="text" id="department"></input> <br>
-    SAIS ID: <input type="text" id="sais"></input> <br> <br>
-    
-    <button onclick="submit()">Submit</button>
-  </div>
-
-    
   <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-database.js"></script>
   <script src="../js/firebase-connect.js"></script>

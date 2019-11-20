@@ -2,12 +2,12 @@
 
 function show_profile(){
     let prof_parent = document.getElementsByClassName("prof-container")[0];
-    prof_parent.innerHTML = "Avatar: not yet" + 
-    "<br>Full name: " + prof_info[0].name +
-    "<br>Course: " + prof_info[0].course +
-    "<br>Department: " + prof_info[0].department +
-    "<br>SAIS ID: " + prof_info[0].sais +
-    "<br>Email: " + prof_info[0].email + "<br><br>"
+    prof_parent.innerHTML = "<h5 class='text-info'>Avatar:<h5> not yet" + 
+    "<br><h5 class='text-info'>Full name:</h5> " + prof_info[0].name +
+    "<br><h5 class='text-info'>Course:</h5> " + prof_info[0].course +
+    "<br><h5 class='text-info'>Department:</h5> " + prof_info[0].department +
+    "<br><h5 class='text-info'>SAIS ID:</h5> " + prof_info[0].sais +
+    "<br><h5 class='text-info'>Email:</h5> " + prof_info[0].email + "<br><br>"
 
     // console.log(prof_info)
     
