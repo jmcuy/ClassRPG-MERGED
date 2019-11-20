@@ -39,17 +39,6 @@
         <div class="header">
             <!-- <h1>Greetings, "name" !</h1> -->
         </div>
-
-        <button onclick="expand('add-subject')" class="smol btn btn-success">Add Guild Mission</button>
-        <p id="add-subject">
-            <br>
-            Guild Mission Name: <br>
-            <input type="text" id="subject" class="smol form-control">
-            <br>
-            <button onclick="submit('add-subject')" class="smol btn btn-primary">Submit</button>
-
-        </p>
-        <br> <br>
         <h2>My Guild Missions</h2>
         <hr>
 
@@ -57,9 +46,18 @@
             loading...
             <!-- <button><a href="guild-mission-teacher.html" onclick="dispSubjects">Subject</a></button> -->
             <!-- <button>Subject 2</button> -->
-
         </div>
+        <br> <br>
+        <h2>Add Guild Mission</h2>
+        <hr>
+        <p id="add-subject">
 
+            Guild Mission Name: <br> <br>
+            <input type="text" id="subject" class="smol form-control">
+            <br>
+            <button onclick="submit('add-subject')" class="smol btn btn-primary">Submit</button>
+
+        </p>
     </div>
 
     <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>

@@ -6,17 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ClassRPG | Participants </title>
+
+    <link rel="stylesheet" type="text/css" href="../css/animate.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
 </head>
 
 <body>
-        <button><a href="home-teacher.html">Home</a></button>
-        <button><a href="profile-teacher.html">My Profile</a></button>
-        <button><a href="index.html">Sign Out</a></button><br><br>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">ClassRPG</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <h2>Guild Mission (Subject Code) </h2>
-    <h2>Enrolled Participants</h2>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home-teacher.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">My Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Sign Out</a>
+                </li>
 
-    <table>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <h2 id="subject-code">Guild Mission (Subject Code) </h2>
+        <h3>Enrolled Participants</h3>
+        <div>
+            <table id="user-table">
+                <tr>
+                    <th>Participants</th>
+                    <th>Guild</th>
+                    <th>Level</th>
+                    <th>Current XP</th>
+                </tr>
+            </table>
+        </div>
+        <!-- <table>
         <tr>
             <th>Participants</th>
             <th>Guild</th>
@@ -47,9 +80,12 @@
             <th>2</th>
             <th>120</th>
         </tr>
-    </table><br><br>
-
-    <button><a href="guild-mission-teacher.html">Back</a></button>
+    </table><br><br> -->
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-database.js"></script>
+    <script src="../js/firebase-connect.js"></script>
+    <script src="../js/participants.js"></script>
 </body>
 
 </html>

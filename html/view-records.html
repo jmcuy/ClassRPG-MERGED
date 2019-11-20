@@ -6,33 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ClassRPG | View Records</title>
+    <link rel="stylesheet" type="text/css" href="../css/animate.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
 </head>
 
 <body>
-    <button><a href="home-teacher.html">Home</a></button>
-    <button><a href="profile-teacher.html">My Profile</a></button>
-    <button><a href="index.html">Sign Out</a></button><br><br>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">ClassRPG</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <h2>Guild Mission (Subject Code)</h2>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home-teacher.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">My Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Sign Out</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+<div class="container-fluid">
+    <h2 id="subject-code"> Guild Mission (Subject Code)</h2>
     <h3>Guild Activity Name</h3>
     <h4>Total XP: XP</h4>
 
-   Select Participant: 
-   <select>
-        <option>Participant 1</option>
-        <option>Participant 2</option>
-        <option>Participant 3</option>
-        <option>Participant 4</option>
-      </select> <br><br>
+    <div id="selector">
+          Select Participant: 
+      <!-- <select id="participant-list">
+          <option>Participant 1</option>
+          <option>Participant 2</option>
+          <option>Participant 3</option>
+          <option>Participant 4</option>
+      </select> <br><br> -->
+        <select id="participant-list">
+            <option id="def" value="" selected>none</option>
+        </select>
+    </div><br>
 
-      Sub-Topic 1 XP: XP <br>
+      <!-- Sub-Topic 1 XP: XP <br>
       Sub-Topic 2 XP: XP <br>
-      Sub-Topic 3 XP: XP <br> <br>
-
-      Total Gained XP: <br> <br>
+      Sub-Topic 3 XP: XP <br> <br> -->
+    <div id="input-subs">
+      NOTHING YET
+    </div><br>
+    
+    <div id="total">Total Gained XP: </div><br> <br>
       
-    <button><a href="guild-mission-teacher.html">Back</a></button>
+    <button class="smol btn btn-primary"><a href="guild-mission-teacher.html">Back</a></button>
+  </div>
+    <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-database.js"></script>
 
+    <script src="../js/firebase-connect.js"></script>
+    <script src="../js/records.js"></script>
 </body>
 
 </html>
