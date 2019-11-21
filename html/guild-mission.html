@@ -12,36 +12,39 @@
 </head>
 
 <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-                <a class="navbar-brand" href="#">ClassRPG</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
-                    aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-        
-                <div class="collapse navbar-collapse" id="navbarColor01">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="home-student.html">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="profile.html">My Profile</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Sign Out</a>
-                        </li>
-        
-                    </ul>
-                </div>
-            </nav>
+   
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">ClassRPG</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+        aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-            <div class="container-fluid">
-    <h2>Guild Mission (Course Code)</h2>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="home-student.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="profile.html">My Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Sign Out</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+    <h2 id="course-code">Guild Mission (Course Code)</h2>
 
     <h3>Current Level</h3>
-    Current XP:
-    <h4>Quizzes</h4>
-    <button onclick="viewMission()">Quiz #1</button>
+    <h3 id="CXP">Current XP: </h3>
+    <div id="quiz">
+        <h4>Quizzes</h4>
+        nothing yet..
+        <!-- <button onclick="viewMission()">Quiz #1</button> -->
+    </div>
     <div id="view-mission">
         Date: <br>
         Topic: <br>
@@ -53,23 +56,25 @@
         Topic Total XP: <br> <br>
 
     </div>
+    <div id="labs">
+        <h4>Lab Activities</h4>
+        nothing yet..
+    </div>
+    <div id="lab-view">
+    </div>
+    <div id="exams">
+        <h4>Exams</h4>
+        nothing yet..
+    </div>
+    <div id="exam-view"></div>
+    <!-- <h4>Lab Activities</h4>
+    <h4>Exams</h4> -->
 
-    <h4>Lab Activities</h4>
+    <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-database.js"></script>
 
-    <h4>Exams</h4>
-</div>
-    <script>
-        document.getElementById("view-mission").style.display = "none";
-
-        function viewMission() {
-            var x = document.getElementById("view-mission");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
-    </script>
+    <script src="../js/firebase-connect.js"></script>
+    <script src="../js/student-view.js"></script>
 </body>
 
 </html>
