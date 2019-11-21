@@ -57,7 +57,7 @@ hr {
 }
 
 .bg-img {
-    background-image: url("../assets/scroll.jpg");
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -93,4 +93,23 @@ h2, label {
 
   .smol {
       width: 20%;
+  }
+  
+  .register-form {
+      padding: 5%;
+  }
+
+  .center {
+      text-align: center;
+  }
+
+  .reg-btn {
+      width: 100%;
+      font-size: 18px;
+      padding: 5%;
+  }
+
+  .reg-input {
+      margin-left: 5%;
+      width: 80%;
   }
