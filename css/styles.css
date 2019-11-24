@@ -1,8 +1,12 @@
 @font-face { 
-    font-family: Breathe Fire; src: url('../assets/Breathe\ Fire.otf'); 
-    font-family: Dalelands Unical; src: url('../assets/Dalelands\ Uncial.otf'); 
+    font-family: Breathe Fire; 
+    src: url('../assets/Breathe\ Fire.otf'); 
 } 
 
+@font-face { 
+    font-family: Dalelands Unical; 
+    src: url('../assets/Dalelands\ Uncial.otf'); 
+} 
 
 .col {
     width: 5%;
