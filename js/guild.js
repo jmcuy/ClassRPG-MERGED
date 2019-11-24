@@ -42,7 +42,7 @@ function dispSubject(){
             pcontainer.appendChild(sub_child);
             let br = document.createElement("br");
             pcontainer.appendChild(br);
-            sub_child.setAttribute("class", "class=btn btn-primary");
+            sub_child.setAttribute("class", "class=btn subjects-btn");
         }
     } else {
         console.log("unde")

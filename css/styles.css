@@ -1,3 +1,13 @@
+@font-face { 
+    font-family: Breathe Fire; src: url('../assets/Breathe\ Fire.otf'); 
+    font-family: Dalelands Unical; src: url('../assets/Dalelands\ Uncial.otf'); 
+} 
+
+
+.col {
+    width: 5%;
+}
+
 /* HIDE RADIO */
 [type=radio] { 
     position: absolute;
@@ -66,6 +76,12 @@ hr {
 
 h2, label {
     padding-left: 1%;
+    font-family: Breathe Fire;
+}
+
+.header {
+    font-family: Breathe Fire;
+    color: #f4c154;
 }
 
 .tos-bg{
@@ -113,3 +129,13 @@ h2, label {
       margin-left: 5%;
       width: 80%;
   }
+
+ .subjects-btn {
+     background-color: #f4ddc5;
+     font-family: Dalelands Unical;
+ }
+
+ .submit-btn {
+     width: 100%;
+     background-image: url("../assets/submit-btn.png"); 
+ }
