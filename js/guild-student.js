@@ -48,6 +48,9 @@ function dispSubject(){ //displays enrolled subjects
             
             sub_child.innerHTML = "<h4>"+ sub_name +" </h4>";
             pcontainer.appendChild(sub_child);
+            let br = document.createElement("br");
+            pcontainer.appendChild(br);
+            sub_child.setAttribute("class", "class=btn subjects-btn");
         }
     } else {
         console.log("unde")

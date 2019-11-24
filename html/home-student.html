@@ -13,30 +13,16 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">ClassRPG</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
-            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <!---Nav Bar-->
+    <img src="../assets/title.png" width="30%" height="100%">
+    <a href="home-teacher.html"> <img src="../assets/home-btn.png" width="20%" height="20%"> </a>
+    <a href="profile.html"> <img src="../assets/profile-btn.png" width="20%" height="20%"> </a>
+    <a href="../index.html"> <img src="../assets/sign-out.png" width="20%" height="20%"> </a>
 
-        <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="home-student.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="profile.html">My Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Sign Out</a>
-                </li>
-
-            </ul>
-        </div>
-    </nav>
 
     <div class="container-fluid">
+        <div class="row">
+            <div class="col">
         <div class="header"></div>
         <h3 id="CXP">Current XP: </h3>
         <h2>My Guild Missions</h2>
@@ -53,10 +39,18 @@
         <h2>Add Guild Mission</h2>
         <hr>
         <h4>Enter Access Key: </h4>
-        <input type="text" id="guild_key" class="smol form-control"></input>
+        <input type="text" id="guild_key" class="form-control"></input>
         <br>
+        <!--
         <button onclick="submit('guild_key')" class="smol btn btn-primary">Submit</button>
+        -->
+        <a onclick="submit('guild_key')"> <img src="../assets/submit-btn.png" width="50%"> </a>
     </div>
+    <div class="col">
+            <img src="../assets/warrior.png">
+    </div>
+</div>
+</div>
     <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-database.js"></script>
 
