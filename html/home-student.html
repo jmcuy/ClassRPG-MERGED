@@ -12,7 +12,15 @@
 </head>
 
 <body>
-
+    <style>
+        body {
+            height: 100%;
+            background-image: linear-gradient(to bottom, rgba(48, 48, 48, 0.7), rgba(32, 32, 32, 0.7)),
+                url("../assets/tos.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
     <!---Nav Bar-->
     <img src="../assets/title.png" width="30%" height="100%">
     <a href="home-teacher.html"> <img src="../assets/home-btn.png" width="20%" height="20%"> </a>
@@ -23,34 +31,34 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col">
-        <div class="header"></div>
-        <h3 id="CXP">Current XP: </h3>
-        <h2>My Guild Missions</h2>
-        <hr>
-        <!-- <button><a href="guild-mission.html">Subject</a></button>
+                <div class="header"></div>
+                <h3 id="CXP">Current XP: </h3>
+                <h2>My Guild Missions</h2>
+                <hr>
+                <!-- <button><a href="guild-mission.html">Subject</a></button>
     <button>Subject 2</button> -->
-        <div class="sub-container">
-            loading...
-            <!-- <button><a href="guild-mission-teacher.html" onclick="dispSubjects">Subject</a></button> -->
-            <!-- <button>Subject 2</button> -->
-        </div>
-        <br> <br>
+                <div class="sub-container">
+                    loading...
+                    <!-- <button><a href="guild-mission-teacher.html" onclick="dispSubjects">Subject</a></button> -->
+                    <!-- <button>Subject 2</button> -->
+                </div>
+                <br> <br>
 
-        <h2>Add Guild Mission</h2>
-        <hr>
-        <h4>Enter Access Key: </h4>
-        <input type="text" id="guild_key" class="form-control"></input>
-        <br>
-        <!--
+                <h2>Add Guild Mission</h2>
+                <hr>
+                <h4>Enter Access Key: </h4>
+                <input type="text" id="guild_key" class="form-control"></input>
+                <br>
+                <!--
         <button onclick="submit('guild_key')" class="smol btn btn-primary">Submit</button>
         -->
-        <a onclick="submit('guild_key')"> <img src="../assets/submit-btn.png" width="50%"> </a>
+                <a onclick="submit('guild_key')"> <img src="../assets/submit-btn.png" width="50%"> </a>
+            </div>
+            <div class="col">
+                <img src="../assets/warrior.png">
+            </div>
+        </div>
     </div>
-    <div class="col">
-            <img src="../assets/warrior.png">
-    </div>
-</div>
-</div>
     <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-database.js"></script>
 
