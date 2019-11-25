@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<<<<<<< HEAD
     <title>ClassRPG | CMSC 11</title>
+=======
+    <title>ClassRPG | Guild Mission</title>
+>>>>>>> rep_b/master
 </head>
 
 <body>
@@ -13,11 +17,16 @@
     <button><a href="profile-teacher.html">My Profile</a></button>
     <button><a href="login.html">Sign Out</a></button> <br><br>
 
+<<<<<<< HEAD
     <h2>Guild Mission (CMSC 11)</h2>
+=======
+    <h2 id="course-code">Guild Mission (Course Code)</h2>
+>>>>>>> rep_b/master
 
     <button onclick="viewAccessKey()">View Access Key</button>
     <p id="access-key">12345</p>
     <button><a href="add-guild-activity.html">Add Guild Activity</a></button>
+<<<<<<< HEAD
     <button><a href="participants.html">See Enrolled Participants</a></button>
 
     <h4>Quizzes</h4>
@@ -30,11 +39,51 @@
         Arithmetic Operations <input type="text" disabled value="5 XP"></input> <br>
 
         Total XP: 15 XP<br> <br>
+=======
+    <button onclick="view_participants()">See Enrolled Participants</button>
+
+    <br><br><button onclick="expand()">Add Activities</button><br>
+    <div id="add_quiz" style="display:none">
+        <br>
+        Title: <input type="text" id="qtitle"></input><br>
+        Date: <input type="text" id="date"></input><br>
+        Type:
+        <select id="activity_type"> 
+            <option value="quiz" selected="">Quiz</option>
+            <option value="lab-activity">Lab Activity</option>
+            <option value="exam">Exam</option>
+        </select> 
+        <br><br>
+        <lu>
+            Subtopic : <input type="text" placeholder="enter topic name" id="subtopic"></input>
+            Total:  <input type="number"  id="total_num" value="0"></input>
+            <button onclick="addSubs()">Add</button>
+        </lu>
+        <br><button onclick="addActivity()">Submit</button><hr>
+        <div class="subs_list" id="subs_container">
+            <div>Added Topics</div><br>
+            none..
+        </div>
+    </div><hr>
+    <div id="quiz">
+        <h4>Quizzes</h4>
+        <button onclick="viewMission()">Quiz #1</button>
+    </div>
+    <div id="view-mission">
+        Date: <br>
+        Topic: <br>
+        Subtopic 1 <input type="text" disabled value="XP"></input> <br>
+        Subtopic 2 <input type="text" disabled value="XP"></input> <br>
+        Subtopic 3 <input type="text" disabled value="XP"></input> <br>
+
+        Total XP: <br> <br>
+>>>>>>> rep_b/master
 
         <button><a href="input-xp.html">Input XP</a></button>
         <button><a href="view-records.html">See Records</a></button>
 
     </div>
+<<<<<<< HEAD
 
     <h4>Lab Activities</h4>
 
@@ -64,6 +113,25 @@
         }
 
     </script>
+=======
+    <div id="labs">
+        <h4>Lab Activities</h4>
+    </div>
+    <div id="lab-view"></div>
+    <div id="exams">
+        <h4>Exams</h4>
+    </div>
+    <div id="exam-view"></div>
+    
+
+    
+
+    <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-database.js"></script>
+
+    <script src="js/firebase-connect.js"></script>
+    <script src="js/guild-teacher.js"></script>
+>>>>>>> rep_b/master
 </body>
 
 </html>

@@ -8,13 +8,20 @@
     <title>ClassRPG | Home - Teacher</title>
 </head>
 
+<<<<<<< HEAD
 <body>
     <button><a href="home-teacher.html">Home</a></button>
     <button><a href="profile-teacher.html">My Profile</a></button>
+=======
+<body >
+    <button><a href="home-teacher.html">Home</a></button>
+    <button><a href="profile.html">My Profile</a></button>
+>>>>>>> rep_b/master
     <button><a href="login.html">Sign Out</a></button>
 
     <h1>Home</h1>
 
+<<<<<<< HEAD
     <h1>Greetings, Teacher!</h1>
 
     <button onclick="addGuildMission()">Add Guild Mission</button>
@@ -46,6 +53,36 @@
     }
 
     </script>
+=======
+    <div class="header">
+        <!-- <h1>Greetings, "name" !</h1> -->
+    </div>
+    
+
+    <button onclick="expand('add-subject')">Add Guild Mission</button>
+    <p id="add-subject">
+        Name: <input type="text" id="subject">
+        <button  onclick="submit('add-subject')">Submit</button>
+    
+    </p>
+    <h2>My Guild Missions</h2>
+    
+    
+    <div class="sub-container">
+        loading...
+        <!-- <button><a href="guild-mission-teacher.html" onclick="dispSubjects">Subject</a></button> -->
+        <!-- <button>Subject 2</button> -->
+
+    </div>
+    
+
+
+    <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-database.js"></script>
+
+    <script src="js/firebase-connect.js"></script>
+    <script src="js/guild.js"></script>
+>>>>>>> rep_b/master
 </body>
 
 </html>

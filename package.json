@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "classrpg",
   "version": "1.0.0",
   "description": "",
@@ -16,4 +17,18 @@
     "url": "https://github.com/jefunabia/ClassRPG/issues"
   },
   "homepage": "https://github.com/jefunabia/ClassRPG#readme"
+=======
+  "name": "classrpg-v2",
+  "version": "1.0.0",
+  "description": "CMSC 166 Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^6.2.1"
+  }
+>>>>>>> rep_b/master
 }
