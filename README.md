@@ -1,11 +1,9 @@
 # ClassRPG
 CMSC 166 Project
 
-<<<<<<< HEAD
 (Working Code) GitHub Page: https://jefunabia.github.io/ClassRPG/index.html
 
 (Prototype) Firebase Page: https://classrpg-2ac09.firebaseapp.com/
-=======
 To check for individual progress, please refer to the different branches, since we haven't merged yet our outputs.
 (Each member has a branch)
 
@@ -49,4 +47,3 @@ Added Mocha for unit testing<br>
 <h1>Update: (20/11/19)</h1>
 - added student-view.js<br>
 - fixed guild-mission.html
->>>>>>> rep_b/master
